@@ -16,6 +16,10 @@ This project focuses on clean layout, modern UI principles, and Apple-inspired d
 - No frameworks
 - No JavaScript (Phase 1)
 
+## Project Status
+🚧 Phase 1 pending (HTML & CSS)  
+Planned upgrades include responsiveness, interactivity, and a React + Tailwind rebuild.
+
 ## 📂 Folder Structure
 
 
