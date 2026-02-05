@@ -103,6 +103,7 @@ h2{ /* Polaris is a next generation... */
 .whyPolaris {/* "why Polaris?" section */
   font-family: "Sofia Sans Semi Condensed", sans-serif;
   font-size: 18px;
+  text-shadow: 2px 2px 4px #000000;
   line-height: 1.7;
   color: #e0e0e0;
   max-width: 750px;
