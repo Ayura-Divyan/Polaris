@@ -5,6 +5,9 @@
 body {
   background-image: url(bg\ 2.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -54,9 +57,11 @@ h2{
 }
 
 .featureList {
-  margin: 50px auto;
-  align-items: center;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   width: max-content;
+
   background-color: #1a6dc040;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -88,4 +93,44 @@ h2{
   font-size: 22px;
   margin-bottom: 8px;
   color: #ffffff;
+}
+
+.whyPolaris {
+  margin-top: 150px;
+  text-align: center;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.journey {
+
+  margin: 550px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 300px auto;
+
+  background-color: #6bb3ff40;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 40px 50px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.journey:hover {
+  background-color: #6bb3ff80;
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 12px 40px 0 rgba(107, 179, 255, 0.3);
+  transform: translate(-50%, -55%);
 }
