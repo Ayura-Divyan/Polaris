@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Unbounded:wght@200..900&display=swap');
 
+* {
+  box-sizing: border-box; 
+}
+
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -34,13 +38,15 @@ h2{ /* Polaris is a next generation... */
 }
 
 .main-navigation { /* top navigation bar */
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 30px; 
   background-color: transparent;
-  padding: 20px;
+  padding: 20px 0; 
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .nav-btn {  /* two buttons on the top nav bar */
