@@ -8,6 +8,7 @@
 html, body {
   overflow-x: hidden;
   width: 100%;
+  background-color: #000000;
 }
 
 body { /* main background image */
@@ -107,7 +108,7 @@ h2{ /* Polaris is a next generation... */
   color: #ffffff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) { /* responsive design for smaller screens */
   .featureList ol {
     flex-direction: column;
     align-items: center;
@@ -126,41 +127,33 @@ h2{ /* Polaris is a next generation... */
   text-align: center;
 }
 
-.journey { /* start your journey button */
 
-  text-align: center;
+
+.journey {
   font-family: "Unbounded", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: #ffffff;
-
-  margin: 520px auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 300px auto;
-
   background-color: #6bb3ff40;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
-  padding: 40px 50px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
-  color: white;
   padding: 15px 32px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   cursor: pointer;
+  margin: 20px auto 0;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 25px;
 }
 
-.journey:hover { /* hover color change for start your journey button */
+.journey:hover {
   background-color: #6bb3ff80;
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 12px 40px 0 rgba(107, 179, 255, 0.3);
-  transform: translate(-50%, -55%);
 }
 
 .watermark { /* final watermark at the bottom */
