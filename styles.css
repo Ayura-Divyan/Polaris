@@ -145,15 +145,17 @@ h2{ /* Polaris is a next generation... */
   cursor: pointer;
   margin: 20px auto 0;
   display: flex;
- justify-content: center;
- align-items: center;
- margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
 }
 
 .journey:hover {
   background-color: #6bb3ff80;
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 12px 40px 0 rgba(107, 179, 255, 0.3);
+  transform: translateY(-2px);
 }
 
 .watermark { /* final watermark at the bottom */
