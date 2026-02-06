@@ -84,6 +84,7 @@ h2{ /* Polaris is a next generation... */
 
 .featureList ol {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
@@ -104,6 +105,14 @@ h2{ /* Polaris is a next generation... */
   font-size: 22px;
   margin-bottom: 8px;
   color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .featureList ol {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .whyPolaris {/* "why Polaris?" section */
