@@ -6,9 +6,7 @@
 }
 
 html, body {
-  overflow-x: hidden;
   width: 100%;
-  background-color: #000000;
 }
 
 body { /* main background image */
@@ -17,8 +15,18 @@ body { /* main background image */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
+body::before { /* subtle overlay for better text visibility */
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 h1{ /* navigate the future with polaris */
     color: rgb(255, 255, 255);
@@ -59,6 +67,8 @@ h2{ /* Polaris is a next generation... */
   position: sticky;
   top: 0;
   z-index: 10;
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(12px);
 }
 
 .nav-btn {  /* two buttons on the top nav bar */
