@@ -9,7 +9,6 @@ html, body {
   overflow-x: hidden;
   width: 100%;
   background-color: #000000;
-  scroll-behavior: smooth;
 }
 
 body { /* main background image */
@@ -57,7 +56,8 @@ h2{ /* Polaris is a next generation... */
   background-color: transparent;
   padding: 20px 0; 
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 10;
 }
 
