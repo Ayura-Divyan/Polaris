@@ -8,21 +8,57 @@ button.addEventListener('click', () => {
   }, 200); 
 });
 
-// Scroll-based class toggles (animation of elements when they enter the viewpoint)
+// Scroll-based class toggles 
+// (animation of header when it enters the viewpoint)
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      
-    } else {
-      entry.target.classList.remove('show');
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.1
   });
-}, {
-  threshold: 0.1 
+
+  const headerElements = document.querySelectorAll('.header');
+  headerElements.forEach((el) => observer.observe(el));
 });
 
-const scrollAnimation = document.getElementById('header');
-scrollAnimation.classList.add('hidden');
-observer.observe(scrollAnimation);
+// Scroll-based class toggles 
+// (animation of featurelist when it enters the viewpoint)
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  const featureListElements = document.querySelectorAll('.featureList');
+  featureListElements.forEach((el) => observer.observe(el));
+});
+
+// Scroll-based class toggles 
+// (animation of whyPolaris when it enters the viewpoint)
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  const whyPolarisElements = document.querySelectorAll('.whyPolaris');
+  whyPolarisElements.forEach((el) => observer.observe(el));
+});
+

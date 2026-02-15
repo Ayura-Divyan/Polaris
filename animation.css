@@ -5,7 +5,9 @@
   transition: all 0.2s ease;
 }
 
-/*Scroll-based class toggles (animation of elements when they enter the viewpoint)*/
+/*Scroll-based class toggles*/
+/*(animation of header when it enters the viewpoint)*/
+
 .header.hidden {
   opacity: 0;
   transform: translateY(30px);
@@ -16,3 +18,32 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/*Scroll-based class toggles*/
+/*(animation of featureList when it enters the viewpoint)*/
+
+.featureList.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.featureList.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Scroll-based class toggles*/
+/*(animation of whyPolaris when it enters the viewpoint)*/
+
+.whyPolaris.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.whyPolaris.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
