@@ -9,6 +9,7 @@ html, body {
   overflow-x: hidden;
   width: 100%;
   background-color: #000000;
+  scroll-behavior: smooth;
 }
 
 body { /* main background image */
@@ -70,6 +71,7 @@ h2{ /* Polaris is a next generation... */
   font-family: "Sofia Sans Semi Condensed", sans-serif;
   font-size: 15px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .nav-btn:hover { /* hover color change for nav buttons */
