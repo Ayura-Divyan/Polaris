@@ -28,6 +28,7 @@ body::before { /* subtle overlay for better text visibility */
   z-index: -1;
 }
 
+
 h1{ /* navigate the future with polaris */
     color: rgb(255, 255, 255);
     font-size: 50px;
@@ -68,14 +69,14 @@ h2{ /* Polaris is a next generation... */
   top: 0;
   z-index: 1000;
   transition: 
-  background-color 0.4s ease,
-  backdrop-filter 0.4s ease,
-  box-shadow 0.4s ease,
-  padding 0.5s ease
+    background-color 0.4s ease,
+    backdrop-filter 0.4s ease,
+    box-shadow 0.4s ease,
+    padding 0.5s ease
 }
 
 .main-navigation.scrolled { /* background color change on scroll for nav bar */
-  background: rgba(255, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.571);
   backdrop-filter: blur(12px);
   transition: background-color 0.5s ease;
   
