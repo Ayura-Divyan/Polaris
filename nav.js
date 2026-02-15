@@ -19,3 +19,13 @@ document.querySelector("#learn").addEventListener("click", function(e) {
   // Remove hash from URL
   history.pushState("", document.title, window.location.pathname);
 });
+
+const navbar = document.querySelector(".main-navigation");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+});
