@@ -14,7 +14,7 @@ This project focuses on clean layout, modern UI principles, and Apple-inspired d
 - HTML5
 - CSS3 (Flexbox & Grid)
 - No frameworks
-- No JavaScript (Phase 1)
+- JavaScript (Work in progress🚧)
 
 ## Project Status
 🚧 Phase 1 pending (HTML & CSS)  
