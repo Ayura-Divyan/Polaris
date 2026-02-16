@@ -61,14 +61,24 @@ h2{ /* Polaris is a next generation... */
   justify-content: center;
   align-items: center;
   gap: 30px; 
-  background-color: transparent;
+  background-color: rgba(15, 15, 15, 0);
   padding: 20px 0; 
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 10;
-  background: rgba(20, 20, 20, 0.6);
+  z-index: 1000;
+  transition: 
+    background-color 0.4s ease,
+    backdrop-filter 0.4s ease,
+    box-shadow 0.4s ease,
+    padding 0.5s ease
+}
+
+.main-navigation.scrolled { /* background color change on scroll for nav bar */
+  background: rgba(0, 0, 0, 0.571);
   backdrop-filter: blur(12px);
+  transition: background-color 0.5s ease;
+  
 }
 
 .nav-btn {  /* two buttons on the top nav bar */
