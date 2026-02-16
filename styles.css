@@ -4,6 +4,9 @@
 * {
   box-sizing: border-box; 
 }
+html {
+  scroll-padding: 100px;;
+}
 
 html, body {
   width: 100%;
@@ -27,6 +30,7 @@ body::before { /* subtle overlay for better text visibility */
   height: 100%;
   z-index: -1;
 }
+
 
 h1{ /* navigate the future with polaris */
     color: rgb(255, 255, 255);
