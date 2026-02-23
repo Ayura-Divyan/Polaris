@@ -94,19 +94,19 @@ p{ /* Thank you for your interest... */
     text-align: left;
 }
 
-.form-container { /* Style for the form container */
+.form-container { /* Style for the contents of the form contents */
   display: flex;
   justify-content: right;
-  flex-direction: column; 
+  flex-direction: row; 
   gap: 15px; 
-  max-width: 400px;
+  max-width: 700px;
   margin: -50px auto 40px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
 
-.main-layout {
+.main-layout { /*Flexbox for both the text and the form */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -116,7 +116,7 @@ p{ /* Thank you for your interest... */
   box-sizing: border-box;
 }
 
-.text-area {
+.text-area { /*Flexbox for just the text on the left */
   justify-content: left;
   flex: 1;
   max-width: 500px;
@@ -126,23 +126,23 @@ p{ /* Thank you for your interest... */
   text-align: left;
 }
 
-.text-area h1 {
+.text-area h1 { /*Start your journey...*/
   font-size: 3.5rem;
   line-height: 1.1;
   margin: 0 0 20px 0;
 }
 
-.text-area p {
+.text-area p { /* Thank you for your interest... */
   font-size: 1.1rem;
   line-height: 1.6;
   color: #ccd6f6;
 }
 
-.form-container {
+.form-container {/* Style/alignment for the form itself */
   display: flex;
   justify-content: right;
   align-items: top;
-  margin: -300px 300px 100px auto;
+  margin: -400px 120px 100px auto;
   flex-direction: column;
   padding: 30px;
   background: rgba(255, 255, 255, 0.05);
@@ -151,29 +151,58 @@ p{ /* Thank you for your interest... */
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   color: white;
+  max-width: 700px;
 }
 
-.form-group {
+.form-group {/* Flexbox for the form inputs and labels */
   display: flex;
   flex-direction: column;
   gap: 5px;
   justify-content: right;
 }
 
-input {
+.name-fields {/* Flexbox for the first and last name fields */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input {/*Format for the input fields for first name, last name, email, and phone number */
   padding: 12px;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.1);
   color: white;
+  width: 100%; 
 }
 
-button {
-  padding: 15px;
-  background-color: #007bff;
+
+.form-label {/*Style for the labels of the form inputs */
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+textarea {/*Style for the message input box */
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(251, 249, 249, 1);
+  color: white;
+}
+input[type="submit"] {/* Style for the submit button */
+  background-color: #101e2c;
   color: white;
   border: none;
+  padding: 12px 20px;
   border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 18px;
 }
+input[type="submit"]:hover {/*Style for the submit button on hover */
+  background-color: #2C3E50;
+  cursor: pointer;
+}
+
