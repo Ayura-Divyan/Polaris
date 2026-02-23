@@ -33,6 +33,50 @@ body::before { /* subtle overlay for better text visibility */
   background-color: rgba(0, 0, 0, 0.5); 
 }
 
+.main-navigation { /* top navigation bar */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+  background-color: rgba(15, 15, 15, 0);
+  padding: 20px 0; 
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: 
+    background-color 0.4s ease,
+    backdrop-filter 0.4s ease,
+    box-shadow 0.4s ease,
+    padding 0.5s ease
+}
+
+.main-navigation.scrolled { /* background color change on scroll for nav bar */
+  background: rgba(0, 0, 0, 0.571);
+  backdrop-filter: blur(12px);
+  transition: background-color 0.5s ease;
+  
+}
+
+.nav-btn {  /* two buttons on the top nav bar */
+  border: none;
+  padding: 12px 35px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-btn:hover { /* hover color change for nav buttons */
+  color: #46697c;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
 h1{ /*Start your journey...*/
     color: rgb(255, 255, 255);
     font-size: 50px;
