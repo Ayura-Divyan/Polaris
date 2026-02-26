@@ -84,6 +84,9 @@ h1{ /*Start your journey...*/
     text-align: left;
     margin-top: 200px;
 }
+
+
+
 p{ /* Thank you for your interest... */
     font-family: "Sofia Sans Semi Condensed", sans-serif;
     font-size: 20px;
@@ -126,6 +129,17 @@ p{ /* Thank you for your interest... */
   text-align: left;
 }
 
+@media screen and (max-width: 800px) { /* Responsive design for mobile: Text */
+  .text-area {
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: center;
+    text-size-adjust: 85%;
+  }
+  
+}
+
 .text-area h1 { /*Start your journey...*/
   font-size: 3.5rem;
   line-height: 1.1;
@@ -152,6 +166,16 @@ p{ /* Thank you for your interest... */
   border-radius: 15px;
   color: white;
   max-width: 700px;
+}
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin: 75px 45px 100px auto;
+    padding: 30px;
+    width: 85%;
+  }
 }
 
 .form-group {/* Flexbox for the form inputs and labels */
