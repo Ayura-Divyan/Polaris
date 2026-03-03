@@ -32,8 +32,8 @@ Planned upgrades include responsiveness, interactivity, and a React + Tailwind r
 ## 👥 Team
 This project is built collaboratively.
 
-- Developer 1: Your Name
-- Developer 2: Friend’s Name
+- Developer 1: Ayura Divyan
+- Developer 2: Nimhara Weerakkodi
 
 ## 📈 Future Improvements
 - Responsive refinements
