@@ -1,45 +1,25 @@
-# Polaris | Futuristic Landing Page
+# Polaris | Precision Web Interface
 
-Polaris is a premium, futuristic landing page built using **HTML and CSS only**.  
-This project focuses on clean layout, modern UI principles, and Apple-inspired design.
+Polaris is a high-fidelity landing page designed with a focus on minimalist aesthetics and architectural CSS. It prioritizes white space, refined typography, and subtle glassmorphic elements to deliver a premium user experience.
 
-## 🚀 Project Goals
-- Master HTML & CSS fundamentals
-- Build real-world layout experience
-- Practice Flexbox and CSS Grid
-- Develop a portfolio-ready landing page
-- Learn collaboration using GitHub
+[View Documentation](#) | [Live Preview](#) | [Contact Development Team](#)
 
-## 🧱 Tech Stack
-- HTML5
-- CSS3 (Flexbox & Grid)
-- No frameworks
-- JavaScript (Work in progress🚧)
+---
 
-## Project Status
-🚧 Phase 1 pending (HTML & CSS)  
-Planned upgrades include responsiveness, interactivity, and a React + Tailwind rebuild.
+### Design Philosophy
 
-## 📂 Folder Structure
+The interface is built on a foundation of "Achromatic Precision," focusing on depth and hierarchy without the need for heavy ornamentation.
+
+* **Grid Systems:** Utilizes a strict CSS Grid layout for mathematical alignment across all viewports.
+* **Visual Hierarchy:** Leverages fluid typography and balanced white space to guide user focus.
+* **Motion Architecture:** Employs non-intrusive CSS transitions to mimic high-end hardware interfaces.
 
 
-## 🎨 Design Direction
-- Minimal, futuristic, and premium
-- Limited color palette
-- Strong typography hierarchy
-- Subtle hover effects and transitions
 
-## 👥 Team
-This project is built collaboratively.
+### Technical Specifications
 
-- Developer 1: Ayura Divyan
-- Developer 2: Nimhara Weerakkodi
+* **Core:** Semantic HTML5
+* **Styles:** CSS3 (Custom Properties, Flexbox, Grid)
+* **Performance:** Zero-dependency architecture for near-instant load times.
+* **Accessibility:** ARIA-compliant structure and high-contrast color ratios.
 
-## 📈 Future Improvements
-- Responsive refinements
-- Tailwind CSS version
-- React component rebuild
-- Animations and interactivity
-
-## 📜 License
-MIT License
