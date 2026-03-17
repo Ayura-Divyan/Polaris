@@ -14,7 +14,7 @@ html, body {
 }
 
 body { /* main background image */
-  background-image: url(assets/formbg.jpg);
+  background-image: url(/formbg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
