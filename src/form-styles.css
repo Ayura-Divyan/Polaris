@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Unbounded:wght@200..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Unbounded:wght@200..900&display=swap");
 
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 html {
-  scroll-padding: 100px;;
+  scroll-padding: 100px;
 }
 
-html, body {
+html,
+body {
   width: 100%;
 }
 
-body { /* main background image */
+body {
+  /* main background image */
   background-image: url(/formbg.jpg);
   background-size: cover;
   background-position: center;
@@ -22,7 +23,8 @@ body { /* main background image */
   overflow-x: hidden;
 }
 
-body::before { /* subtle overlay for better text visibility */
+body::before {
+  /* subtle overlay for better text visibility */
   content: "";
   position: fixed;
   top: 0;
@@ -30,35 +32,37 @@ body::before { /* subtle overlay for better text visibility */
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.main-navigation { /* top navigation bar */
-  display:flex;
+.main-navigation {
+  /* top navigation bar */
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px; 
+  gap: 30px;
   background-color: rgba(15, 15, 15, 0);
-  padding: 20px 0; 
+  padding: 20px 0;
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: 
+  transition:
     background-color 0.4s ease,
     backdrop-filter 0.4s ease,
     box-shadow 0.4s ease,
-    padding 0.5s ease
+    padding 0.5s ease;
 }
 
-.main-navigation.scrolled { /* background color change on scroll for nav bar */
+.main-navigation.scrolled {
+  /* background color change on scroll for nav bar */
   background: rgba(0, 0, 0, 0.571);
   backdrop-filter: blur(12px);
   transition: background-color 0.5s ease;
-  
 }
 
-.nav-btn {  /* two buttons on the top nav bar */
+.nav-btn {
+  /* two buttons on the top nav bar */
   border: none;
   padding: 12px 35px;
   color: #ffffff;
@@ -71,37 +75,39 @@ body::before { /* subtle overlay for better text visibility */
   text-decoration: none;
 }
 
-.nav-btn:hover { /* hover color change for nav buttons */
+.nav-btn:hover {
+  /* hover color change for nav buttons */
   color: #46697c;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }
 
-h1{ /*Start your journey...*/
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    font-family: "Unbounded", sans-serif;
-    text-align: left;
-    margin-top: 200px;
+h1 {
+  /*Start your journey...*/
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-family: "Unbounded", sans-serif;
+  text-align: left;
+  margin-top: 200px;
 }
 
-
-
-p{ /* Thank you for your interest... */
-    font-family: "Sofia Sans Semi Condensed", sans-serif;
-    font-size: 20px;
-    line-height: 1.6;
-    color: #e0e0e0;
-    max-width: 700px;
-    margin: 20px auto 20px auto;
-    text-align: left;
+p {
+  /* Thank you for your interest... */
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 700px;
+  margin: 20px auto 20px auto;
+  text-align: left;
 }
 
-.form-container { /* Style for the contents of the form */
+.form-container {
+  /* Style for the contents of the form */
   display: flex;
   justify-content: right;
-  flex-direction: row; 
-  gap: 15px; 
+  flex-direction: row;
+  gap: 15px;
   max-width: 700px;
   margin: -50px auto 40px auto;
   padding: 20px;
@@ -109,7 +115,8 @@ p{ /* Thank you for your interest... */
   border-radius: 8px;
 }
 
-.main-layout { /*Flexbox for both the text and the form */
+.main-layout {
+  /*Flexbox for both the text and the form */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -119,7 +126,8 @@ p{ /* Thank you for your interest... */
   box-sizing: border-box;
 }
 
-.text-area { /*Flexbox for just the text on the left */
+.text-area {
+  /*Flexbox for just the text on the left */
   justify-content: left;
   flex: 1;
   max-width: 500px;
@@ -129,7 +137,8 @@ p{ /* Thank you for your interest... */
   text-align: left;
 }
 
-@media screen and (max-width: 800px) { /* Responsive design for mobile: Text */
+@media screen and (max-width: 800px) {
+  /* Responsive design for mobile: Text */
   .text-area {
     margin-top: 50px;
     margin-left: 45px;
@@ -137,22 +146,24 @@ p{ /* Thank you for your interest... */
     text-align: center;
     text-size-adjust: 85%;
   }
-  
 }
 
-.text-area h1 { /*Start your journey...*/
+.text-area h1 {
+  /*Start your journey...*/
   font-size: 3.5rem;
   line-height: 1.1;
   margin: 0 0 20px 0;
 }
 
-.text-area p { /* Thank you for your interest... */
+.text-area p {
+  /* Thank you for your interest... */
   font-size: 1.1rem;
   line-height: 1.6;
   color: #ccd6f6;
 }
 
-.form-container {/* Style/alignment for the form itself */
+.form-container {
+  /* Style/alignment for the form itself */
   display: flex;
   justify-content: right;
   align-items: top;
@@ -178,14 +189,16 @@ p{ /* Thank you for your interest... */
   }
 }
 
-.form-group {/* Flexbox for the form inputs and labels */
+.form-group {
+  /* Flexbox for the form inputs and labels */
   display: flex;
   flex-direction: column;
   gap: 5px;
   justify-content: right;
 }
 
-.name-fields {/* Flexbox for the first and last name fields */
+.name-fields {
+  /* Flexbox for the first and last name fields */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -193,31 +206,34 @@ p{ /* Thank you for your interest... */
   margin-bottom: 20px;
 }
 
-input {/*Format for the input fields for first name, last name, email, and phone number */
+input {
+  /*Format for the input fields for first name, last name, email, and phone number */
   padding: 12px;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.1);
   color: white;
-  width: 100%; 
+  width: 100%;
 }
 
-
-.form-label {/*Style for the labels of the form inputs */
+.form-label {
+  /*Style for the labels of the form inputs */
   font-family: "Sofia Sans Semi Condensed", sans-serif;
   font-size: 18px;
   color: #ffffff;
 }
 
-textarea {/*Style for the message input box */
+textarea {
+  /*Style for the message input box */
   padding: 12px;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(251, 249, 249, 1);
   color: rgb(0, 0, 0);
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
-input[type="submit"] {/* Style for the submit button */
+input[type="submit"] {
+  /* Style for the submit button */
   background-color: #101e2c;
   color: white;
   border: none;
@@ -226,8 +242,8 @@ input[type="submit"] {/* Style for the submit button */
   font-family: "Sofia Sans Semi Condensed", sans-serif;
   font-size: 18px;
 }
-input[type="submit"]:hover {/*Style for the submit button on hover */
-  background-color: #2C3E50;
+input[type="submit"]:hover {
+  /*Style for the submit button on hover */
+  background-color: #2c3e50;
   cursor: pointer;
 }
-
