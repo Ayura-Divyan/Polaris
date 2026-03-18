@@ -1,51 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Start Your Journey Today</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/src/form-styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/src/form-styles.css" />
     <script type="module" src="/src/nav.js"></script>
-    <script type = "module" src="/src/form-validation.js" defer></script>
-</head>
-<body>
+    <script type="module" src="/src/form-validation.js" defer></script>
+  </head>
+  <body>
+    <nav class="main-navigation">
+      <button class="nav-btn" id="started">Get Started</button>
+      <button class="nav-btn" id="learn">Learn More</button>
+    </nav>
 
-  <nav class="main-navigation">
-    <button class="nav-btn" id="started">Get Started</button>
-    <button class="nav-btn" id="learn">Learn More</button>
-  </nav>
+    <div class="main-layout:">
+      <div class="text-area">
+        <h1 class="main-heading">Start Your Journey with Polaris Today</h1>
+        <p class="intro-paragraph">
+          Thank you for your interest in Polaris! Please fill out the form below
+          to get started on your journey with us. We look forward to connecting
+          with you and helping you navigate the future of technology.
+        </p>
+      </div>
 
-<div class = "main-layout:">
-     <div class = "text-area">
-        <h1 class = "main-heading">Start Your Journey with Polaris Today</h1>
-        <p class = "intro-paragraph">Thank you for your interest in Polaris! Please fill out the form below to get started on your journey with us. We look forward to connecting with you and helping you navigate the future of technology.</p>
-    </div>
-    
-    <form id = "contactus" class = "form-container" action="/action_page.php" method="post">
-        <div class = "form-group">
-            <div class  = "name-fields">
-             <label class = "form-label" for="fname">First Name:</label> <br><br>
-             <input placeholder="Enter your first name." type="text" id="fname" name="fname"> <br>
-             
-             <label class = "form-label" for="lname">Last Name:</label><br> <br>
-             <input placeholder="Enter your last name." type="text" id="lname" name="lname"> <br> 
-             
-            </div>
-             
-             <label class = "form-label" for="email">Email:</label>
-             <input placeholder="Enter your email address." type="email" id="email" name="email"><br>
-             
-             <label class = "form-label" for="phone">Phone Number:</label>
-             <input placeholder="Enter your phone number" type="tel" id="phone" name="phone"><br>
-        
-             <label class = "form-label" for="message">Message:</label>
-             <textarea placeholder="Type your message here..." type="text" id="message" name="message"></textarea><br>
-             
-             <input type="submit" value="Submit"><br>
+      <form
+        id="contactus"
+        class="form-container"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="form-group">
+          <div class="name-fields">
+            <label class="form-label" for="fname">First Name:</label>
+            <br /><br />
+            <input
+              placeholder="Enter your first name."
+              type="text"
+              id="fname"
+              name="fname"
+            />
+            <br />
+
+            <label class="form-label" for="lname">Last Name:</label><br />
+            <br />
+            <input
+              placeholder="Enter your last name."
+              type="text"
+              id="lname"
+              name="lname"
+            />
+            <br />
+          </div>
+
+          <label class="form-label" for="email">Email:</label>
+          <input
+            placeholder="Enter your email address."
+            type="email"
+            id="email"
+            name="email"
+          /><br />
+
+          <label class="form-label" for="phone">Phone Number:</label>
+          <input
+            placeholder="Enter your phone number"
+            type="tel"
+            id="phone"
+            name="phone"
+          /><br />
+
+          <label class="form-label" for="message">Message:</label>
+          <textarea
+            placeholder="Type your message here..."
+            type="text"
+            id="message"
+            name="message"
+          ></textarea
+          ><br />
+
+          <input type="submit" value="Submit" /><br />
         </div>
         <div id="formAlert" class="hidden"></div>
-    </form>
-
-</div>
-
+      </form>
+    </div>
+  </body>
+</html>
