@@ -44,14 +44,21 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (lastName === "") {
       e.preventDefault();
       showAlert("Please enter your last name.");
+    } else if (email === "") {
+      e.preventDefault();
+      showAlert("Please enter your email address.");
     } else if (!emailRegex.test(email)) {
       e.preventDefault();
       showAlert("Please enter a valid email address.");
+    } else if (number === "") {
+      e.preventDefault();
+      showAlert("Please enter your phone number.");
+    } else if (!phoneRegex.test(number)) {
+      e.preventDefault();
+      showAlert("Please enter a valid 10-digit phone number.");
     } else if (message.length < 10) {
       e.preventDefault();
       showAlert("Your message must be at least 10 characters.");
-    } else if (!phoneRegex.test(number)) {
-      showAlert("Please enter a valid 10-digit phone number.");
       isValid = false;
     } else {
       // Success State
