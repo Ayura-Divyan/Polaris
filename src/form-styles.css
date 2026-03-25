@@ -331,6 +331,11 @@ input[type="submit"]:hover {
   margin: 0;
 }
 
+#close-alert-btn:hover {
+  color: #ffffff;
+  background: #000000;
+}
+
 #alert-title {
   font-family: "Unbounded", sans-serif;
   font-size: 20px;
@@ -344,5 +349,5 @@ input[type="submit"]:hover {
   font-size: 16px;
   color: #e0e0e0;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
