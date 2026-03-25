@@ -40,25 +40,31 @@ document.addEventListener("DOMContentLoaded", () => {
     // Check conditions one by one
     if (firstName === "") {
       e.preventDefault();
-      showAlert("Please enter your first name.");
+      showAlert("First Name Required", "Please enter your first name.");
     } else if (lastName === "") {
       e.preventDefault();
-      showAlert("Please enter your last name.");
+      showAlert("Last Name Required", "Please enter your last name.");
     } else if (email === "") {
       e.preventDefault();
-      showAlert("Please enter your email address.");
+      showAlert("Email Required", "Please enter your email address.");
     } else if (!emailRegex.test(email)) {
       e.preventDefault();
-      showAlert("Please enter a valid email address.");
+      showAlert("Invalid Email", "Please enter a valid email address.");
     } else if (number === "") {
       e.preventDefault();
-      showAlert("Please enter your phone number.");
+      showAlert("Phone Number Required", "Please enter your phone number.");
     } else if (!phoneRegex.test(number)) {
       e.preventDefault();
-      showAlert("Please enter a valid 10-digit phone number.");
+      showAlert(
+        "Invalid Phone Number",
+        "Please enter a valid 10-digit phone number.",
+      );
     } else if (message.length < 10) {
       e.preventDefault();
-      showAlert("Your message must be at least 10 characters.");
+      showAlert(
+        "Message Too Short",
+        "Your message must be at least 10 characters.",
+      );
       isValid = false;
     } else {
       // Success State
